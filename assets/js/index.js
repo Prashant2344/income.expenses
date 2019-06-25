@@ -35,4 +35,10 @@ var controller = (function(budgetCtrl,UICtrl){
     }
   });
 
+  document.addEventListener('keypress',function(event){
+    if(event.charCode === 30 || event.keyCode === 30 || event.which === 30){
+      ctrlAddItem();
+    }
+  });
+
 })(budgetContoller,UIController);
